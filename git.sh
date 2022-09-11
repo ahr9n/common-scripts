@@ -9,3 +9,7 @@ git commit -m "something"
 git status
 
 git push
+
+git pull
+
+git fetch
