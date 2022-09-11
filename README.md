@@ -1,1 +1,1 @@
-# commands
+# common scripts
