@@ -13,3 +13,9 @@ git push
 git pull
 
 git fetch
+
+git branch
+
+git branch last-update
+
+git checkout last-update
