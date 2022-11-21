@@ -42,3 +42,6 @@ Updating dependencies to their latest versions
 # To update to the latest versions; this will fetch the latest matching versions and update the lock file
 # Equivalent to deleting the poetry.lock file and running install again :D
 poetry update
+
+# synchronizing dependencies to ensure the locked dependencies are the only ones present in the environment, removing anything that is not necessary
+poetry install --sync
