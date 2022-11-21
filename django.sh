@@ -15,3 +15,21 @@ python3 manage.py runserver 8080
 
 # add another application to the project (e.g. polls)
 python3 manage.py startapp polls
+
+# create migrations for the changes
+python3 manage.py makemigrations
+
+# create the tables in the database before we can use them
+python3 manage.py migrate
+
+# to include another app in migrations (e.g. polls)
+python3 manage.py makemigrations polls
+
+# play with API
+python3 manage.py shell
+
+# create an admin user
+python3 manage.py createsuperuser
+
+# run tests for application polls
+python3 manage.py test polls
