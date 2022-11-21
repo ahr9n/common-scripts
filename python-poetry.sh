@@ -16,8 +16,13 @@ poetry new poetry-demo
 cd pre-existing-project
 poetry init
 
-# add dependencies (e.g. pendulum)
+# add/remove dependencies (e.g. pendulum)
 poetry add pendulum
+poetry add git+https://github.com/sdispater/pendulum.git
+poetry remove pendulum
+
+# list all the available packages
+poetry show
 
 # run script.py by poetry
 poetry run python3 script.py
@@ -43,3 +48,12 @@ poetry update
 
 # synchronizing dependencies to ensure the locked dependencies are the only ones present in the environment, removing anything that is not necessary
 poetry install --sync
+
+# validate the structure of the pyproject.toml file
+poetry check
+
+# export the lock file to other formats
+poetry export -f requirements.txt --output requirements.txt
+
+# display all the available Poetry commands
+poetry list
