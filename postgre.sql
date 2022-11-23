@@ -1,3 +1,5 @@
+# Visit https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-20-04 for more!
+
 # Step 1 – Installing the Components from the Ubuntu Repositories
 # sudo apt update
 # sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
