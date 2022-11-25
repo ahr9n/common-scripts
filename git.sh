@@ -16,6 +16,8 @@ git fetch
 
 git branch
 
+# add 
 git branch last-update
 
+# switch
 git checkout last-update
