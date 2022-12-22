@@ -2,7 +2,7 @@
 
 # using powershell
 
-# install Windows Subsystem for Linux
+# install Virtual Machine Platform, Windows Subsystem for Linux and Ubuntu
 wsl --install
 
 # install Ubunto distro
