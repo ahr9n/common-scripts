@@ -27,3 +27,8 @@ sudo service docker restart
 sudo docker run hello-world
 # This command downloads a test image and runs it in a container.
 # When the container runs, it prints a confirmation message and exits.
+
+# Error: Cannot Connect to the Docker Daemon? Solution: Start the Docker service with systemctl
+sudo systemctl unmask docker
+sudo systemctl start docker
+sudo systemctl status docker
