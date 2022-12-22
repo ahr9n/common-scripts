@@ -32,3 +32,6 @@ sudo docker run hello-world
 sudo systemctl unmask docker
 sudo systemctl start docker
 sudo systemctl status docker
+# For more information:
+# https://appuals.com/cannot-connect-to-the-docker-daemon-at-unix-var-run-docker-sock/
+# https://stackoverflow.com/questions/65400999/enable-systemd-in-wsl-2
