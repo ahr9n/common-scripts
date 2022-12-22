@@ -26,3 +26,13 @@ passwd <username>
 
 # Once successfully, close WSL inside of PowerShell using the command
 exit
+
+# To see whether your Linux distribution is set to WSL 1 or WSL 2, use the command
+wsl -l -v
+
+# To change versions, use the command
+wsl --set-version <distro name> 2 
+# replacing <distro name> with the name of the Linux distribution that you want to update.
+# For example: 
+wsl --set-version Ubuntu-20.04 2 
+# will set your Ubuntu 20.04 distribution to use WSL 2
