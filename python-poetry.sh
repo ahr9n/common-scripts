@@ -21,6 +21,18 @@ poetry add pendulum
 poetry add git+https://github.com/sdispater/pendulum.git
 poetry remove pendulum
 
+# Allow >=2.0.5, <3.0.0 versions
+poetry add pendulum@^2.0.5
+
+# Allow >=2.0.5, <2.1.0 versions
+poetry add pendulum@~2.0.5
+
+# Allow >=2.0.5 versions, without upper bound
+poetry add "pendulum>=2.0.5"
+
+# Allow only 2.0.5 version
+poetry add pendulum==2.0.5
+
 # list all the available packages
 poetry show
 
