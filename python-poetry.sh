@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # For more information:
-https://www.digitalocean.com/community/tutorials/how-to-install-poetry-to-manage-python-dependencies-on-ubuntu-22-04
+# https://www.digitalocean.com/community/tutorials/how-to-install-poetry-to-manage-python-dependencies-on-ubuntu-22-04
 
 # install
 curl -sSL https://install.python-poetry.org | python3 -
