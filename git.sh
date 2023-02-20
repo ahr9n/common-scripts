@@ -6,8 +6,6 @@ git add .
 
 git commit -m "something"
 
-git status
-
 git push
 
 git pull
@@ -24,6 +22,11 @@ git checkout last-update
 
 # set the local branch to track the remote branch
 git branch --set-upstream-to=origin/last-update last-update
+
+git status
+# On branch last-update
+# Your branch is up to date with 'origin/last-update'.
+# nothing to commit, working tree clean
 
 # Undoing last commit (not pushed) to return to the staging area
 git reset --soft HEAD~
