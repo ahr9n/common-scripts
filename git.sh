@@ -30,5 +30,9 @@ git status
 
 # Undoing last commit (not pushed) to return to the staging area
 git reset --soft HEAD~
-
 # For more undo stuff: https://www.nobledesktop.com/learn/git/undo-changes
+
+# rebase to get the latest commits from master branch to feature branch
+# https://git-scm.com/docs/git-rebase
+git rebase master feature
+git rebase master 
