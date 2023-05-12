@@ -36,3 +36,24 @@ git reset --soft HEAD~
 # https://git-scm.com/docs/git-rebase
 git rebase master feature
 git rebase master 
+
+# to store locally the changes (suppose you want to change the branch, having some uncommited changes in the current branch)
+git stash
+# or having some meaningful message?
+git stash -m "Add new promotion features"
+# now you can change your branch, or you can verify from here (to see the list of stashes):
+git stash list
+# to apply changes
+git stash apply
+# or 
+git stash apply stash@{2}
+# to drop the applied changes 
+git stash drop
+
+# assume you have a base branch "master" and 2 branches <b1, b2> that are from master, and some commits <a, b, c, d> are pushed to branch b1
+# how to have on b2 the commits <a, d> only from b1?
+git cherry-pick a
+git cherry-pick d
+
+# how to have on b2 the commits <a, b, c> only from b1?
+git cherry-pick a^..c
