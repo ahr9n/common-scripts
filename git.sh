@@ -43,11 +43,11 @@ git stash
 git stash -m "Add new promotion features"
 # now you can change your branch, or you can verify from here (to see the list of stashes):
 git stash list
-# to apply changes
+# when you return again to your branch, and want ro return the stashed changes before
 git stash apply
-# or 
+# or if specific
 git stash apply stash@{2}
-# to drop the applied changes 
+# to drop the stashed changes from the stack (when no need for it)
 git stash drop
 
 # assume you have a base branch "master" and 2 branches <b1, b2> that are from master, and some commits <a, b, c, d> are pushed to branch b1
